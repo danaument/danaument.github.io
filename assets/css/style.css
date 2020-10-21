@@ -1,0 +1,37 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --platinum: #eaeaeaff;
+    --raisin-black: #2a2d34ff;
+    --russian-green: #5c946eff;
+    --brilliant-rose: #ff579fff;
+    --majorelle-blue: #574ae2ff;
+
+    font-size: 62.5%;
+}
+
+
+
+header {
+    background-color: var(--raisin-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    color: var(--platinum);
+    font-size: 8rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    align-items: center;
+}
+
+nav a {
+    background-color: unset;
+    color: var(--platinum);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}

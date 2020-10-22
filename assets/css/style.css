@@ -8,7 +8,9 @@
 
     font-size: 62.5%;
 }
-
+    /* 
+    border: 1px solid red;
+    */
 
 
 header {
@@ -19,13 +21,16 @@ header {
     padding: 1%;
     color: var(--platinum);
     font-size: 8rem;
+    border: 1px solid red;
 }
 
 nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     min-width: 300px;
     align-items: center;
+    border: 1px solid green;
 }
 
 nav a {
@@ -34,4 +39,5 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.5rem;
+    border: 1px solid red;
 }

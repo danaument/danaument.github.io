@@ -5,7 +5,7 @@
     --russian-green: #5c946eff;
     --brilliant-rose: #ff579fff;
     --majorelle-blue: #574ae2ff;
-
+    font-family: sans-serif;
     font-size: 62.5%;
 }
     /* 
@@ -24,12 +24,19 @@ header {
     border: 1px solid red;
 }
 
+nav { /* can't figure out how to get nav items to center within whole header or at least relative to nav or nav ul*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100%;
     min-width: 300px;
-    align-items: center;
+    align-items: stretch;
     border: 1px solid green;
 }
 
@@ -40,4 +47,86 @@ nav a {
     text-decoration: none;
     font-size: 1.5rem;
     border: 1px solid red;
+}
+
+nav a:hover {
+    color: var(--brilliant-rose);
+  }
+
+
+#hero {
+    display: flex;
+    width: 100%;
+    max-height: 500px;
+    margin: 0px;
+    overflow: auto;
+}
+
+#hero img {
+    object-fit: cover;
+    object-position: fill;
+    width: 100%;
+}
+  
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: stretch; */
+    width: 100%;
+    min-width: 800px;
+    padding: 5%;
+    border: 1px solid red;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 5%;
+    align-items: center;
+}
+
+h2 {
+    flex: 30%;
+    font-size: 5rem;
+    text-align: right;
+    color: var(--majorelle-blue);
+    padding: 1%;
+    border-right: 2%;
+    border-right-style: solid;
+    border-right-color: var(--brilliant-rose);
+    margin-right: 2%;
+}
+
+#headshot {
+    flex: 30%;
+}
+
+#aboutme p {
+    flex: 40%;
+    font-size: 2rem;
+    padding-left: 2%;
+}
+
+#projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.leadProject {
+    flex: 100%;
+}
+
+.followerProjects {
+    width:50%;
+}
+
+footer span {
+    font-size: 10rem;
+    color: var(--raisin-black);
 }
